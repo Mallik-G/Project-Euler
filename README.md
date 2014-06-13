@@ -3,6 +3,6 @@ Project Euler Solutions
 
 For fun or profit :)
 
-http://projecteuler.net/progress=bytegirl
+[My Badge](http://projecteuler.net/profile/bytegirl.png)
 
 
