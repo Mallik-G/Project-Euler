@@ -19,33 +19,21 @@ Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be see
 
 Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
 
+Answer: 983
 '''
 
-def perm_item(elements):
-    if len(elements) <= 1:
-        yield elements
-    else:
-        for (index, elmt) in enumerate(elements):
-            other_elmts = elements[:index]+elements[index+1:]
-            for permutation in perm_item(other_elmts):
-                yield [elmt] + permutation
 
-
-def lex_perm(l1, n):
-    perm_list = list(perm_item(l1))
-    return sorted(perm_list)[n-1]
-
+def recurring_cycle(n, d):
+    for dd in range(1, d):
+        if 1 == 10**dd % d:
+            return dd
+    return 0
 
 def main():
-    import time
-    start = time.time()
-
-    l1 = [0,1,2,3,4,5,6,7,8,9]
-    n = 10**6
-    print(lex_perm(l1, n))
-
-    elapsed = (time.time() - start)
-    print('Tests Passed!\n It took %s seconds to run them.' % (elapsed))
+  n = 1
+  limit = 1000
+  longest = max(recurring_cycle(n, i) for i in range(2, limit+1))
+  print [i for i in range(2, limit+1) if recurring_cycle(n, i) == longest][0]
 
 if __name__ == '__main__':
     main()
