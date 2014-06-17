@@ -1,7 +1,11 @@
 Project Euler Solutions
 =======================
 
-For fun or profit :)
+These are my solutions for the Euler project. For fun or profit :)
+
+Most of the exercises are written in Python, but I have some Java and Clojure too.
+
+Enjoy!
 
 [My Badge](http://projecteuler.net/profile/bytegirl.png)
 
