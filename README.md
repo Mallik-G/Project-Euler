@@ -7,6 +7,6 @@ Most of the exercises are written in Python, but I have some Java and Clojure to
 
 Enjoy!
 
-[My Badge](http://projecteuler.net/profile/bytegirl.png)
+![](http://projecteuler.net/profile/bytegirl.png)
 
 
