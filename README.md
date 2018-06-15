@@ -1,5 +1,4 @@
-Project Euler Solutions
-=======================
+# 🍟 Project Euler Solutions 🍟
 
 These are my solutions for the Euler project. For fun or profit :)
 
